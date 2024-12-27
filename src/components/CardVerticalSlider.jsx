@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const CardVerticalSlider = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [scrollEnded, setScrollEnded] = useState(false);
 
   useEffect(() => {
-    let scrollTimeout;
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const element = document.getElementById("card-slider");
@@ -14,20 +12,13 @@ const CardVerticalSlider = () => {
         const offsetTop = rect.top + window.scrollY;
         if (scrollY >= offsetTop && scrollY <= offsetTop + rect.height) {
           setScrollPosition(scrollY - offsetTop);
-          setScrollEnded(false);
         }
       }
-
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        setScrollEnded(true);
-      }, 150);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      clearTimeout(scrollTimeout);
     };
   }, []);
 
@@ -43,7 +34,6 @@ const CardVerticalSlider = () => {
     },
     {
       id: 2,
-
       title: "02",
       heading: "Meta",
       description:
@@ -73,35 +63,45 @@ const CardVerticalSlider = () => {
 
   return (
     <div className="py-32">
-      <div className="mx-auto ">
+      <div className="mx-auto">
         <div
           id="card-slider"
           className="max-w-7xl mx-8 relative"
           style={{ height: "350vh" }}
         >
-          {cards.map((card) => (
-            <div
-              key={card.id}
-              className="bg-cover bg-center p-5 md:p-10  h-[550px] mb-[-35px] transition-all duration-500 origin-bottom flex flex-col items-center justify-center"
-              style={{
-                backgroundImage: `url('${card.imageUrl}')`,
-                position: "sticky",
-                top: "20%",
-                zIndex: 1,
-                transition: "top 0.5s ease-out",
-              }}
-            >
-              <h2 className="text-2xl md:text-4xl  font-bold mb-6 text-white">
-                {card.title}
-              </h2>
-              <h1 className="text-2xl md:text-4xl  font-bold mb-6 text-white">
-                {card.heading}
-              </h1>
-              <p className="text-white text-sm md:text-lg leading-relaxed mb-8 max-w-xl text-center">
-                {card.description}
-              </p>
-            </div>
-          ))}
+          {cards.map((card, index) => {
+            // Calculate scale and opacity
+            const cardOffset = index * 500; // Adjust based on spacing
+            const distance = Math.abs(scrollPosition - cardOffset);
+            const opacity = Math.max(0.1, 1 - distance / 700);
+            const scale = Math.max(0.7, 1 - distance / 1000); // Scale down when farther
+
+            return (
+              <div
+                key={card.id}
+                className="bg-cover bg-center p-5 md:p-10 h-[550px] mb-[-35px] transition-all duration-500 origin-center flex flex-col items-center justify-center rounded-2xl"
+                style={{
+                  backgroundImage: `url('${card.imageUrl}')`,
+                  position: "sticky",
+                  top: "20%",
+                  zIndex: 1,
+                  opacity,
+                  transform: `scale(${scale})`,
+                  transition: "all 0.5s ease-out",
+                }}
+              >
+                <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
+                  {card.title}
+                </h2>
+                <h1 className="text-2xl md:text-4xl font-bold mb-6 text-white">
+                  {card.heading}
+                </h1>
+                <p className="text-white text-sm md:text-lg leading-relaxed mb-8 max-w-xl text-center">
+                  {card.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import CardVerticalSlider from "./components/CardVerticalSlider";
+import CreativeWorks from "./components/CreativeWorks";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -10,6 +11,7 @@ export default function App() {
       <div>
         <Navbar />
         <Hero />
+        <CreativeWorks />
         <Videos />
         <CardVerticalSlider />
         <Footer />

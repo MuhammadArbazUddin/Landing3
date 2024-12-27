@@ -1,105 +1,112 @@
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const SocialMediaLinks = () => (
-  <div className="px-8 pt-16 bg-[#1A1A19]">
-    <div className="flex items-center justify-between border-b-2 pb-8">
-      <div className="flex items-center">
-        <FaInstagram className="text-white text-2xl mr-4" />
+  <div className="px-4 pt-8 sm:px-8 sm:pt-16 bg-[#1A1A19]">
+    {/* Top Social Links */}
+    <div className="flex flex-wrap gap-4 sm:gap-0 sm:flex-nowrap items-center justify-between border-b-2 pb-8">
+      <a
+        href="https://www.instagram.com/sociallywiredinc/profilecard/?igsh=MTNnMnFzdWx1YW5pZQ%3D%3D"
+        target="_blank"
+        className="flex text-lg sm:text-2xl items-center gap-2"
+      >
+        <img
+          className="w-6 sm:w-8"
+          src="https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/6697510e294ac7131f0db08f_instagram.svg"
+          alt="Instagram"
+        />
         Instagram
-      </div>
-      <div className="flex items-center">
-        <FaFacebook className="text-white text-2xl mr-4" />
+      </a>
+      <a
+        target="_blank"
+        href="https://www.facebook.com/people/Socially-wired-Inc/61565652324656/?mibextid=LQQJ4d&rdid=FQoeOoh5RUUpgRxQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FCh4GsGhjoMJXrrVo%2F%3Fmibextid%3DLQQJ4d"
+        className="flex text-lg sm:text-2xl items-center gap-2"
+      >
+        <img
+          className="w-6 sm:w-8"
+          src="https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/6697510ec7edab92c91c3113_facebook.svg"
+          alt="Facebook"
+        />
         Facebook
-      </div>
-      <div className="flex items-center">
-        <FaLinkedin className="text-white text-2xl mr-4" />
+      </a>
+      <a
+        href="https://www.linkedin.com/company/socially-wired-inc/"
+        className="flex text-lg sm:text-2xl items-center gap-2"
+        target="_blank"
+      >
+        <img
+          className="w-6 sm:w-8"
+          src="https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/6697510fb122053d5e1a8d67_linkedin.svg"
+          alt="LinkedIn"
+        />
         LinkedIn
-      </div>
-    </div>{" "}
-    <div className="grid grid-cols-4 gap-8 px-8 py-16 bg-[#1A1A19] text-white">
+      </a>
+    </div>
+
+    {/* Main Content Section */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-8 py-8 bg-[#1A1A19] text-white">
       <div>
         <a href="#" className="text-lg">
           <img
-            className="w-16"
+            className="w-12 sm:w-16"
             src="https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/66975597026532de9a7a460b_eventplan.svg"
-            alt=""
+            alt="Event Plan"
           />
         </a>
-        <div className="mt-4">
-          <h2>Address</h2>
-          <h2>Number</h2>
-        </div>
       </div>
       <div>
-        <a href="#pages" className="text-2xl font-semibold">
+        <a href="#pages" className="text-xl sm:text-2xl font-semibold">
           Pages
         </a>
-        <ul className="pt-4">
+        <ul className="pt-4 space-y-2">
           <li>
-            <a href="#home" className="text-lg">
+            <a href="#home" className="text-base sm:text-lg">
               Home
             </a>
           </li>
           <li>
-            <a href="#about" className="text-lg">
+            <a href="#about" className="text-base sm:text-lg">
               About
             </a>
           </li>
           <li>
-            <a href="#services" className="text-lg">
+            <a href="#services" className="text-base sm:text-lg">
               Services
             </a>
           </li>
         </ul>
       </div>
       <div>
-        <a href="#utility-pages" className="text-2xl font-semibold">
-          Utility Pages
-        </a>
-        <ul className="pt-4">
+        <ul className="space-y-2">
           <li>
-            <a href="#privacy" className="text-lg">
-              Privacy Policy
+            <a href="#privacy" className="text-base sm:text-lg">
+              Toronto, Ontario Canada
             </a>
           </li>
           <li>
-            <a href="#terms" className="text-lg">
-              Terms of Service
+            <a href="#terms" className="text-base sm:text-lg">
+              +1 519 697 8425
+            </a>
+          </li>
+          <li>
+            <a href="#terms" className="text-base sm:text-lg">
+              info@sociallywired.com
+            </a>
+          </li>
+          <li>
+            <a href="#terms" className="text-base sm:text-lg">
+              Privacy Policy
             </a>
           </li>
         </ul>
       </div>
       <div>
-        <a
-          href="mailto:contact@example.com"
-          className="text-2xl font-semibold "
-        >
-          Contact us on
-        </a>
-        <ul className="pt-4">
-          <li>
-            <a href="mailto:contact@example.com" className="text-lg">
-              Email
-            </a>
-          </li>
+        <ul className="space-y-2">
           <li>
             <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg"
+              href="mailto:contact@example.com"
+              className="text-base sm:text-lg"
             >
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg"
-            >
-              Twitter
+              ©Techxudo All Rights Reserved
             </a>
           </li>
         </ul>
