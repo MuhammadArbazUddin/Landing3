@@ -55,18 +55,18 @@ const CreativeWorks = () => {
 
   return (
     <>
-      <div className="text-white text-center w-full pb-14 px-5">
+      <div className="text-white text-center w-full pb-14 px-5 pt-8">
         <p className="pb-3 flex items-center justify-center gap-3 text-base uppercase">
-          <img
+          {/* <img
             className="w-9"
             src="https://cdn.prod.website-files.com/656d560b812df0530768d62a/65743aacc4e2ecd7e6821381_icon-10.svg"
             alt=""
-          />
+          /> */}
           We Are Proud of Our
         </p>
         <h1 className="text-5xl font-bold capitalize">Creative works</h1>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-20 w-full container mx-auto">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-20 w-full container mx-auto pb-8">
         {/* Navigation Buttons */}
         <div className="flex flex-row lg:flex-col items-center gap-4 max-lg:order-2">
           <button
