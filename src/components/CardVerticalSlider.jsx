@@ -73,7 +73,9 @@ const CardVerticalSlider = () => {
             // Calculate scale and opacity
             const cardOffset = index * 500; // Adjust based on spacing
             const distance = Math.abs(scrollPosition - cardOffset);
-            const opacity = Math.max(0.1, 1 - distance / 700);
+            {
+              /* const opacity = Math.max(0.1, 1 - distance / 700); */
+            }
             const scale = Math.max(0.7, 1 - distance / 1000); // Scale down when farther
 
             return (
@@ -85,7 +87,7 @@ const CardVerticalSlider = () => {
                   position: "sticky",
                   top: "20%",
                   zIndex: 1,
-                  opacity,
+                  // opacity,
                   transform: `scale(${scale})`,
                   transition: "all 0.5s ease-out",
                 }}
