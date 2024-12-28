@@ -7,20 +7,22 @@ export default function WorkProcess() {
     target: targetRef,
   });
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-82%"]);
-
   return (
-    <div className="flex items-start justify-center container mx-auto bg-[#141412] ">
-      <div className="text-white text-center w-1/3 pb-14 py-10 px-5 lg:sticky top-0">
+    <div className="pt-20 flex flex-col lg:flex-row items-start justify-center container mx-auto  bg-[#1A1A19]">
+      <div className="text-white text-center w-full lg:w-1/3 pb-14 py-10 px-6 lg:sticky top-0">
         <h1 className="text-5xl font-bold capitalize">Our work process</h1>
       </div>
-      <section ref={targetRef} className="relative h-auto lg:h-[2000vh] w-2/3 ">
+      <section
+        ref={targetRef}
+        className="relative h-auto lg:h-[2000vh] w-full lg:w-2/3 max-lg:px-6 "
+      >
         <div className="lg:sticky top-0 lg:flex  h-screen items-center lg:overflow-hidden">
           <motion.div
             style={{ x: window.innerWidth >= 1024 ? x : "0%" }}
             className="flex flex-col lg:flex-row scroll-smooth "
           >
-            <div className="h-screen  flex flex-col justify-between text-white w-[65vw]  ">
-              <div className=" w-full h-1/2 flex flex-col justify-start items-start border-b gap-6 ">
+            <div className=" lg:h-screen   flex flex-col justify-between text-white w-full lg:w-[65vw]  ">
+              <div className=" max-lg:pb-11 lg:w-1/2 lg:h-1/2 flex flex-col justify-start items-start  gap-6 ">
                 <div className="relative pl-7">
                   <p
                     className=" text-end text-clip bg-clip-text text-transparent font-extrabold text-9xl "
@@ -35,15 +37,15 @@ export default function WorkProcess() {
                     Planning
                   </p>
                 </div>
-                <p className="w-2/3 text-[#aca0cf] text-lg">
+                <p className=" text-[#aca0cf] text-lg">
                   Understand client needs and develop a detailed event plan.
                   Initial meetings with clients, defining event goals, creating
                   a proposal, and setting a timeline.
                 </p>
               </div>
-
-              <div className=" w-full h-1/2 flex flex-col justify-end items-end">
-                <div className="relative pl-7">
+              <hr className="hidden lg:block" />
+              <div className="max-lg:pb-11 lg:w-1/2 lg:h-1/2 self-end flex flex-col justify-end items-start lg:items-end">
+                <div className="relative pl-7 self-start">
                   <p
                     className=" text-end text-clip bg-clip-text text-transparent font-extrabold text-9xl "
                     style={{
@@ -57,14 +59,15 @@ export default function WorkProcess() {
                     Prepration
                   </p>
                 </div>
+                <p className=" text-[#aca0cf] text-lg">
+                  Designing branding and promotional materials, selecting
+                  venues, and coordinating with vendors.
+                </p>
               </div>
             </div>
-            <div className="h-screen  flex flex-col items-center justify-between w-[20vw]">
-              <div className="border-b h-1/2 w-full"></div>
-              <div className="h-1/2 w-full"></div>
-            </div>
-            <div className=" h-screen  flex flex-col justify-between text-white w-[65vw]   ">
-              <div className=" w-full h-1/2 flex flex-col justify-start items-start border-b gap-6 ">
+
+            <div className=" lg:h-screen  flex flex-col justify-between max-lg:items-center text-white w-full lg:w-[65vw]   ">
+              <div className="max-lg:pb-11 w-full lg:w-1/2 lg:h-1/2 flex flex-col justify-start items-start  gap-6 ">
                 <div className="relative pl-7">
                   <p
                     className=" text-end text-clip bg-clip-text text-transparent font-extrabold text-9xl "
@@ -79,19 +82,16 @@ export default function WorkProcess() {
                     Execution
                   </p>
                 </div>
-                <p className="w-2/3 text-[#aca0cf] text-lg">
+                <p className=" text-[#aca0cf] text-lg">
                   On-site management, overseeing setup and breakdown, managing
                   vendor coordination, and handling attendee logistics.
                 </p>
               </div>
-
-              <div
-                className=" w-full h-1/2 flex 
-            flex-col justify-end items-end"
-              >
-                <div className="relative pl-7">
+              <hr className="hidden lg:block" />
+              <div className="w-full lg:w-1/2 lg:h-1/2 flex flex-col self-end justify-end items-start lg:items-end">
+                <div className="relative pl-7 slg:elf-start">
                   <p
-                    className=" text-end text-clip bg-clip-text text-transparent font-extrabold text-9xl "
+                    className="  text-clip bg-clip-text text-transparent font-extrabold text-9xl "
                     style={{
                       backgroundImage:
                         "linear-gradient(160deg, #a388f5,#6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
@@ -103,12 +103,16 @@ export default function WorkProcess() {
                     Evolution
                   </p>
                 </div>
+                <p className=" text-[#aca0cf] text-lg">
+                  Collecting attendee and client feedback, conducting a
+                  post-event debrief, and providing a final report to the
+                  client.
+                </p>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
-        
     </div>
   );
 }

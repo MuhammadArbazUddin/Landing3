@@ -62,51 +62,56 @@ const CardVerticalSlider = () => {
   ];
 
   return (
-    <div className="py-32 bg-[#141412]">
-      <div className="mx-auto">
-        <div
-          id="card-slider"
-          className="max-w-7xl mx-8 relative"
-          style={{ height: "350vh" }}
-        >
-          {cards.map((card, index) => {
-            // Calculate scale and opacity
-            const cardOffset = index * 500; // Adjust based on spacing
-            const distance = Math.abs(scrollPosition - cardOffset);
-            {
-              /* const opacity = Math.max(0.1, 1 - distance / 700); */
-            }
-            const scale = Math.max(0.7, 1 - distance / 1000); // Scale down when farther
+    <>
+      <div className="py-10 bg-[#141412]">
+        <h1 className="text-6xl font-bold text-center p-4 mb-8">Services</h1>
+        <div className="mx-auto">
+          <div
+            id="card-slider"
+            className="max-w-7xl mx-8 relative "
+            style={{ height: "350vh" }}
+          >
+            {cards.map((card, index) => {
+              // Calculate scale and opacity
+              const cardOffset = index * 500; // Adjust based on spacing
+              const distance = Math.abs(scrollPosition - cardOffset);
+              {
+                /* const opacity = Math.max(0.1, 1 - distance / 700); */
+              }
+              const scale = Math.max(0.7, 1 - distance / 1000); // Scale down when farther
 
-            return (
-              <div
-                key={card.id}
-                className="bg-cover bg-center p-5 md:p-10 h-[550px] mb-[-35px] transition-all duration-500 origin-center flex flex-col items-center justify-center rounded-2xl"
-                style={{
-                  backgroundImage: `url('${card.imageUrl}')`,
-                  position: "sticky",
-                  top: "20%",
-                  zIndex: 1,
-                  // opacity,
-                  transform: `scale(${scale})`,
-                  transition: "all 0.5s ease-out",
-                }}
-              >
-                <h2 className="text-2xl md:text-4xl font-bold mb-6 text-white">
-                  {card.title}
-                </h2>
-                <h1 className="text-2xl md:text-4xl font-bold mb-6 text-white">
-                  {card.heading}
-                </h1>
-                <p className="text-white text-sm md:text-lg leading-relaxed mb-8 max-w-xl text-center">
-                  {card.description}
-                </p>
-              </div>
-            );
-          })}
+              return (
+                <div
+                  key={card.id}
+                  className="bg-cover bg-center p-5 md:p-10 h-[550px] mb-[-35px] transition-all duration-500 origin-center flex flex-col items-center justify-center rounded-2xl border-2"
+                  style={{
+                    backgroundImage: `url('${card.imageUrl}')`,
+                    position: "sticky",
+                    top: "20%",
+                    zIndex: 1,
+                    // opacity,
+                    transform: `scale(${scale})`,
+                    transition: "all 0.5s ease-out",
+                  }}
+                >
+                  <div className="absolute rounded-t-2xl top-0 left-0 w-full h-[15%] bg-blue-500 flex items-center justify-center">
+                    <h1 className="text-lg md:text-2xl font-bold text-white">
+                      {card.heading}
+                    </h1>
+                  </div>
+                  {/* Content Section */}
+                  <div className="flex flex-col items-center justify-center flex-grow">
+                    <p className="text-white text-sm md:text-lg leading-relaxed mb-8 max-w-xl text-center">
+                      {card.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
