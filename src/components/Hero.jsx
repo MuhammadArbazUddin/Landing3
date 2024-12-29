@@ -49,7 +49,13 @@ const Hero = () => {
           </div>
         </div>
         {/* Bottom Section */}
-        <div className="mt-8 lg:mt-16 text-6xl sm:text-8xl lg:text-[12rem] font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#7959da] via-[#6ae8ff] via-[#aaf2ff] via-[#fff694] to-[#fc67ff]">
+        <div
+          className="mt-8 lg:mt-16 text-6xl sm:text-8xl lg:text-[12rem] font-bold text-center text-transparent bg-clip-text"
+          style={{
+            backgroundImage:
+              "linear-gradient(160deg, #a388f5, #6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
+          }}
+        >
           SociallyWired
         </div>
       </div>
