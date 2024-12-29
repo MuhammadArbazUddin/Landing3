@@ -6,7 +6,7 @@ export default function WorkProcess() {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-82%"]);
+  const x = useTransform(scrollYProgress, [0, 0.8], ["0%", "-50%"]);
   return (
     <div className="pt-20 flex flex-col lg:flex-row items-start justify-center container mx-auto  bg-[#1A1A19]">
       <div className="text-white text-center w-full lg:w-1/3 pb-14 py-10 px-6 lg:sticky top-0">
@@ -14,11 +14,13 @@ export default function WorkProcess() {
       </div>
       <section
         ref={targetRef}
-        className="relative h-auto lg:h-[2000vh] w-full lg:w-2/3 max-lg:px-6 "
+        className="relative h-auto lg:h-[280vh] w-full lg:w-2/3 max-lg:px-6 "
       >
         <div className="lg:sticky top-0 lg:flex  h-screen items-center lg:overflow-hidden">
           <motion.div
-            style={{ x: window.innerWidth >= 1024 ? x : "0%" }}
+            style={{
+              x: window.innerWidth >= 1024 ? x : "0%",
+            }}
             className="flex flex-col lg:flex-row scroll-smooth "
           >
             <div className=" lg:h-screen   flex flex-col justify-between text-white w-full lg:w-[65vw]  ">

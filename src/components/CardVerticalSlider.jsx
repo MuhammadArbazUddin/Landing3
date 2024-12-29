@@ -78,7 +78,7 @@ const CardVerticalSlider = () => {
               {
                 /* const opacity = Math.max(0.1, 1 - distance / 700); */
               }
-              const scale = Math.max(0.7, 1 - distance / 1000); // Scale down when farther
+              const scale = Math.max(0.1, 1 - distance / 1000); // Scale down when farther
 
               return (
                 <div
