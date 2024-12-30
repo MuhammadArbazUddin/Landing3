@@ -2,14 +2,15 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative p-4 sm:p-8 h-[500px] sm:h-screen flex flex-col justify-center">
+    <div className="relative p-4 sm:p-8 h-[400px] sm:h-screen flex flex-col justify-center">
       {/* Background Layer */}
 
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           boxShadow:
-            "inset 0 -270px 180px #1a1a19, inset 0 300px 130px #1a1a19",
+            "inset 0 -100px 180px #1a1a19, inset 0 300px 130px #1a1a19",
+
           backgroundImage:
             "url('https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/669770eddbcf5f504ef99354_hero-01.jpg')",
         }}
@@ -29,13 +30,31 @@ const Hero = () => {
         </div>
         {/* Bottom Section */}
         <div
-          className="mt-8 lg:mt-16 text-[3.5rem] sm:text-8xl lg:text-[12rem] font-bold sm:text-center text-transparent bg-clip-text"
+          className="mt-8 pb-8 sm:pb-16 lg:mt-16 text-[3.3rem] sm:text-8xl lg:text-[12rem] font-bold sm:text-center text-transparent bg-clip-text"
           style={{
             backgroundImage:
               "linear-gradient(160deg, #a388f5, #6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
           }}
         >
           SociallyWired
+        </div>
+        <div className="flex justify-center items-center ">
+          <button
+            className=" relative p-[2px] rounded-md"
+            style={{
+              background:
+                "linear-gradient(160deg, #a388f5, #6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
+            }}
+          >
+            <span
+              className="block bg-[#1B1B1A] px-4 py-2 rounded-md"
+              style={{
+                backgroundClip: "padding-box",
+              }}
+            >
+              Request A Quote{" "}
+            </span>
+          </button>
         </div>
       </div>
     </div>
