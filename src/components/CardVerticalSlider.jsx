@@ -77,7 +77,7 @@ const CardVerticalSlider = () => {
           <div
             id="card-slider"
             className="max-w-7xl mx-8 relative "
-            style={{ height: "350vh" }}
+            style={{ height: "320vh" }}
           >
             {cards.map((card, index) => {
               // Calculate scale and opacity
