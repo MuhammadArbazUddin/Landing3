@@ -1,7 +1,15 @@
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import Form from "./Form";
 
 const SocialMediaLinks = () => (
-  <div className="px-4 pt-8 sm:px-8 sm:pt-16 bg-[#1A1A19]">
+  <div
+    className="px-4 pt-8 sm:px-8 sm:pt-16"
+    style={{
+      boxShadow: "inset 0 -270px 180px #1a1a19, inset 0 300px 130px #1a1a19",
+      background:
+        "url('https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/66a8b3a0d42be9aa880c1dbc_footer-01.jpg')",
+    }}
+  >
     {/* Top Social Links */}
     <div className="flex flex-wrap gap-4 sm:gap-0 sm:flex-nowrap items-center justify-between border-b-2 pb-8">
       <a
@@ -41,9 +49,8 @@ const SocialMediaLinks = () => (
         LinkedIn
       </a>
     </div>
-
     {/* Main Content Section */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-8 py-8 bg-[#1A1A19] text-white">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-8 py-8 text-white">
       <div>
         <a href="#" className="text-lg">
           <img
@@ -111,6 +118,9 @@ const SocialMediaLinks = () => (
           </li>
         </ul>
       </div>
+    </div>
+    <div className="max-w-xs ml-[-30px] ">
+      <Form />
     </div>
   </div>
 );
