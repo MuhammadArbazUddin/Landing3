@@ -99,11 +99,6 @@ const Contact = () => {
               placeholder="Email*"
               className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-white"
             />
-            <input
-              type="tel"
-              placeholder="Phone number*"
-              className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-white"
-            />
             <textarea
               placeholder="Briefly describe your project requirements or objective of the discussion"
               className="w-full p-2 border rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-white"
