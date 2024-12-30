@@ -47,7 +47,7 @@ const Hero = () => {
             }}
           >
             <span
-              className="block bg-[#1B1B1A] px-4 py-2 rounded-md"
+              className="block bg-[#1B1B1A] px-4 py-2 rounded-md hover:bg-transparent transition-all duration-300"
               style={{
                 backgroundClip: "padding-box",
               }}

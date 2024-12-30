@@ -31,9 +31,15 @@ const Navbar = () => {
     <header className=" z-20 sm:absolute top-0 left-0 w-full">
       <div className="hidden px-[5rem] sm:flex flex-wrap p-5 flex-col md:flex-row items-center pb-16">
         <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-          <a className="mr-5 cursor-pointer font-semibold">First Link</a>
-          <a className="mr-5 cursor-pointer font-semibold">Second Link</a>
-          <a className="mr-5 cursor-pointer font-semibold">Third Link</a>
+          <a href="#services" className="mr-5 cursor-pointer font-semibold">
+            Services
+          </a>
+          <a href="#work" className="mr-5 cursor-pointer font-semibold">
+            Work
+          </a>
+          <a href="#contact-us" className="mr-5 cursor-pointer font-semibold">
+            Contact Us
+          </a>
         </nav>
 
         <a
@@ -54,7 +60,7 @@ const Navbar = () => {
             }}
           >
             <span
-              className="block bg-[#1B1B1A] px-4 py-2 rounded-md"
+              className="block bg-[#1B1B1A] px-4 py-2 rounded-md hover:bg-transparent transition-all duration-300"
               style={{
                 backgroundClip: "padding-box",
               }}
@@ -84,7 +90,7 @@ const Navbar = () => {
             }}
           >
             <span
-              className="block bg-[#1B1B1A] px-4 py-2 rounded-md"
+              className="block bg-[#1B1B1A] px-4 py-2 rounded-md hover:bg-transparent transition-all duration-300"
               style={{
                 backgroundClip: "padding-box",
               }}
@@ -104,14 +110,16 @@ const Navbar = () => {
             ref={dropdownRef}
             className="absolute w-[300px] top-[6rem] right-10 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50"
           >
-            <ul className="cursor-pointer">
-              <li onClick={handleItemClick} className="mb-2">
-                Menu Item 1
-              </li>
-              <li onClick={handleItemClick} className="mb-2">
-                Menu Item 1
-              </li>
-              <li onClick={handleItemClick}>Menu Item 2</li>
+            <ul className="cursor-pointer flex flex-col">
+              <a href="#services" onClick={handleItemClick} className="mb-2">
+                Services
+              </a>
+              <a href="#work" onClick={handleItemClick} className="mb-2">
+                Work
+              </a>
+              <a href="#contact-us" onClick={handleItemClick}>
+                Contact Us
+              </a>
             </ul>
           </div>
         )}

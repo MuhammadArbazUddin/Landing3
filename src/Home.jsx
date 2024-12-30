@@ -14,7 +14,7 @@ export default function Home() {
         <WorkProcess />
         <Videos />
         <CreativeWorks />
-        <CardVerticalSlider />
+        {/* <CardVerticalSlider /> */}
         <ContactForm />
       </div>
     </>

@@ -8,9 +8,12 @@ export default function WorkProcess() {
   });
   const x = useTransform(scrollYProgress, [0, 0.8], ["0%", "-50%"]);
   return (
-    <div className="pt-20 flex flex-col lg:flex-row items-start justify-center bg-[#141412]">
+    <div
+      id="services"
+      className="pt-20 flex flex-col lg:flex-row items-start justify-center bg-[#141412]"
+    >
       <div className="text-white text-center w-full lg:w-1/3 pb-14 py-10 px-6 lg:sticky top-0">
-        <h1 className="text-5xl font-bold capitalize">Our work process</h1>
+        <h1 className="text-5xl font-bold capitalize">Services</h1>
       </div>
       <section
         ref={targetRef}
@@ -36,13 +39,16 @@ export default function WorkProcess() {
                     01
                   </p>
                   <p className="text-white text-2xl font-bold absolute left-0 bottom-2 p-1 bg-[#20201b]">
-                    Planning
+                    SNAPCHAT
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  Understand client needs and develop a detailed event plan.
-                  Initial meetings with clients, defining event goals, creating
-                  a proposal, and setting a timeline.
+                  We collaborate closely with Snap to identify and pitch
+                  top-tier talent for Discover Shows. Once approved, we manage
+                  the entire process of running the show optimally, including
+                  re-editing and optimizing your existing (YouTube) content,
+                  conducting A/B tests on thumbnails, and analyzing performance
+                  data.
                 </p>
               </div>
               <hr className="hidden lg:block" />
@@ -58,12 +64,16 @@ export default function WorkProcess() {
                     02
                   </p>
                   <p className="text-white text-2xl font-bold absolute left-0 bottom-2 p-1 bg-[#20201b]">
-                    Preparation
+                    META
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  Designing branding and promotional materials, selecting
-                  venues, and coordinating with vendors.
+                  @DV-LLC, we recognize the importance of tailoring content for
+                  each platform to maximize results. We unlock new revenue
+                  streams by adapting your content specifically for Facebook's
+                  unique environment. Your short-form content holds significant
+                  value on Facebook Reels and other lesser-known bonus features,
+                  which we leverage to your advantage.
                 </p>
               </div>
             </div>
@@ -81,12 +91,15 @@ export default function WorkProcess() {
                     03
                   </p>
                   <p className="text-white text-2xl font-bold absolute left-0 bottom-2 p-1 bg-[#20201b]">
-                    Execution
+                    TIKTOK
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  On-site management, overseeing setup and breakdown, managing
-                  vendor coordination, and handling attendee logistics.
+                  Short-form content is here to stay, but monetizing it can be
+                  challenging. At Daily Vertex LLC, we help you localize and
+                  monetize your short-form content by repurposing it for YouTube
+                  Shorts, Snap, and Facebook Reels, turning your passion into a
+                  profitable venture.
                 </p>
               </div>
               <hr className="hidden lg:block" />
@@ -102,13 +115,17 @@ export default function WorkProcess() {
                     04
                   </p>
                   <p className="text-white text-2xl font-bold absolute left-0 bottom-2 p-1 bg-[#20201b]">
-                    Evolution
+                    YOUTUBE
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  Collecting attendee and client feedback, conducting a
-                  post-event debrief, and providing a final report to the
-                  client.
+                  Daily Vertex LLC offers specialized YouTube Shorts Management
+                  services. Our expert team excels in transforming your existing
+                  content into engaging short-form videos tailored for YouTube
+                  Shorts. Leveraging our extensive knowledge and skills, we
+                  craft captivating Shorts optimized for the platform's unique
+                  format. With our proven track record of generating millions of
+                  views.
                 </p>
               </div>
             </div>

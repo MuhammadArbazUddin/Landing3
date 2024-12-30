@@ -11,10 +11,10 @@
   font-family: "Roboto", serif;
 }
 
-body {
-  background: #1b1b1a;
+html {
+  scroll-behavior: smooth;
 }
 
-.btn {
-  @apply px-4 py-2 font-semibold border-2 border-white text-white rounded-lg;
+body {
+  background: #1b1b1a;
 }

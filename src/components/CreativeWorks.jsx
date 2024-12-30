@@ -55,7 +55,17 @@ const CreativeWorks = () => {
 
   return (
     <>
-      <div className="py-8 bg-[#141412]">
+      <div
+        id="#work"
+        className="py-8"
+        style={{
+          boxShadow:
+            "inset 0 -300px 180px #1a1a19, inset 0 300px 130px #1a1a19",
+
+          backgroundImage:
+            "url('https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/669770eddbcf5f504ef99354_hero-01.jpg')",
+        }}
+      >
         <div className="text-white text-center w-full pb-14 px-5 pt-8 ">
           <p className="pb-3 flex items-center justify-center gap-3 text-base uppercase">
             {/* <img
