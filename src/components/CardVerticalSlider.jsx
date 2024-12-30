@@ -104,7 +104,7 @@ const CardVerticalSlider = () => {
                   }}
                 >
                   <div
-                    className="absolute rounded-t-2xl top-[-1px] left-[-1px] w-[320px] sm:w-[1274px] h-[15%] flex items-center justify-center"
+                    className="absolute rounded-t-2xl top-0 w-full h-[15%] flex items-center justify-center"
                     style={{ backgroundColor: card.color }}
                   >
                     <h1 className="text-lg md:text-2xl font-bold">
