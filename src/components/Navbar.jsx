@@ -1,9 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
+  const [menu, setMenu] = useState(false);
+
+  const handleClick = () => {
+    setMenu(!menu);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (menu && !event.target.closest(".menu-container")) {
+        setMenu(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [menu]);
+
   return (
     <header className="z-20 sm:absolute top-0 left-0 w-full">
-      <div className="px-[5rem] flex flex-wrap p-5 flex-col md:flex-row items-center pb-16">
+      {/* <div className="px-[5rem] flex flex-wrap p-5 flex-col md:flex-row items-center pb-16">
         <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
           <a className="mr-5 cursor-pointer font-semibold">First Link</a>
 
@@ -39,6 +60,46 @@ const Navbar = () => {
             </span>
           </button>
         </div>
+      </div> */}
+      <div className="p-5 flex sm:hidden items-center justify-between">
+        <div>
+          <a
+            href="/"
+            className="flex cursor-pointer  title-font font-medium items-center text-gray-900 "
+          >
+            <span className="w-14 h-14 text-black text-center font-bold pt-4 bg-white rounded-full">
+              SW
+            </span>
+          </a>
+        </div>
+        <div className="flex items-center gap-4">
+          <button
+            className="relative p-[2px] rounded-md"
+            style={{
+              background:
+                "linear-gradient(160deg, #a388f5, #6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
+            }}
+          >
+            <span
+              className="block bg-[#1B1B1A] px-4 py-2 rounded-md"
+              style={{
+                backgroundClip: "padding-box",
+              }}
+            >
+              Let's Start
+            </span>
+          </button>
+          <div onClick={handleClick} className="bg-[#7959DA] p-4 rounded-full">
+            <GiHamburgerMenu />
+          </div>
+        </div>
+        {menu && (
+          <ul className="fixed w-[370px] top-[6rem] right-2 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50">
+            <li className="mb-2">Menu Item 1</li>
+            <li>Menu Item 2</li>
+            {/* Add more menu items here */}
+          </ul>
+        )}
       </div>
     </header>
   );
