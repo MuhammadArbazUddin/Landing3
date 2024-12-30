@@ -1,22 +1,21 @@
-import CardVerticalSlider from "./components/CardVerticalSlider";
-import CreativeWorks from "./components/CreativeWorks";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import React from "react";
+import Home from "./Home";
 import Navbar from "./components/Navbar";
-import Videos from "./components/Videos";
-import WorkProcess from "./components/WorkProcess";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
-export default function App() {
+const App = () => {
   return (
-    <>
-      <div>
-        <Hero />
-        <WorkProcess />
-        <Videos />
-        <CreativeWorks />
-        <CardVerticalSlider />
-        <Footer />
-      </div>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
+
+export default App;

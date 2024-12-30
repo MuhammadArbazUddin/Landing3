@@ -100,7 +100,7 @@ const SocialMediaLinks = () => (
             </a>
           </li>
           <li>
-            <a href="#terms" className="text-base sm:text-lg">
+            <a href="/privacy-policy" className="text-base sm:text-lg">
               Privacy Policy
             </a>
           </li>

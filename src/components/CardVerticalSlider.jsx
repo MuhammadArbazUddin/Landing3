@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import snapchat from "../assets/snp.png";
 import youtube from "../assets/youtube.png";
 import meta from "../assets/meta.png";
+import tiktok from "../assets/tiktok.png";
 
 const CardVerticalSlider = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -52,8 +53,7 @@ const CardVerticalSlider = () => {
       heading: "TIKTOK",
       description:
         "Short-form content is here to stay, but monetizing it can be challenging. At Daily Vertex LLC, we help you localize and monetize your short-form content by repurposing it for YouTube Shorts, Snap, and Facebook Reels, turning your passion into a profitable venture.",
-      imageUrl:
-        "https://www.ibackdrop.com/cdn/shop/products/TiktokLogoRepeatBackdropIBD-24616.jpg?v=1617352416",
+      imageUrl: tiktok,
       color: "#E62E4F",
       TextColor: "#E62E4F",
     },
@@ -104,7 +104,7 @@ const CardVerticalSlider = () => {
                   }}
                 >
                   <div
-                    className="absolute rounded-t-2xl top-[-1px] left-[-1px] w-[1274px] h-[15%] flex items-center justify-center"
+                    className="absolute rounded-t-2xl top-[-1px] left-[-1px] w-[320px] sm:w-[1274px] h-[15%] flex items-center justify-center"
                     style={{ backgroundColor: card.color }}
                   >
                     <h1 className="text-lg md:text-2xl font-bold">
