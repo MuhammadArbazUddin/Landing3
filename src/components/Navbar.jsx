@@ -13,9 +13,7 @@ const Navbar = () => {
       <div className="hidden px-[5rem] sm:flex flex-wrap p-5 flex-col md:flex-row items-center pb-16">
         <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
           <a className="mr-5 cursor-pointer font-semibold">First Link</a>
-
           <a className="mr-5 cursor-pointer font-semibold">Second Link</a>
-
           <a className="mr-5 cursor-pointer font-semibold">Third Link</a>
         </nav>
 
@@ -80,11 +78,13 @@ const Navbar = () => {
           </div>
         </div>
         {menu && (
-          <ul className="absolute w-[300px] top-[6rem] right-10 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50">
-            <li className="mb-2">Menu Item 1</li>
-            <li>Menu Item 2</li>
-            {/* Add more menu items here */}
-          </ul>
+          <div className="absolute w-[300px] top-[6rem] right-10 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50">
+            <ul className="cursor-pointer">
+              <li className="mb-2">Menu Item 1</li>
+              <li className="mb-2">Menu Item 1</li>
+              <li>Menu Item 2</li>
+            </ul>
+          </div>
         )}
       </div>
     </header>

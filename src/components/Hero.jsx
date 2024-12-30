@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative p-4 sm:p-8  sm:h-screen flex flex-col justify-center">
+    <div className="relative p-4 sm:p-8 h-[500px] sm:h-screen flex flex-col justify-center">
       {/* Background Layer */}
 
       <div
@@ -18,18 +18,18 @@ const Hero = () => {
       {/* Content Layer */}
       <div className="relative z-10">
         {/* Top Section */}
-        <div className="px-[3rem] flex flex-col lg:flex-row items-start gap-8 lg:gap-[10rem] justify-between">
-          <div className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-center lg:text-left">
+        <div className="sm:px-[3rem] flex flex-col lg:flex-row items-start gap-8 lg:gap-[10rem] justify-between">
+          <div className="text-2xl sm:text-4xl lg:text-5xl font-semibold sm:text-center lg:text-left">
             Precision planning for perfect corporate events
           </div>
-          <div className="text-sm sm:text-base lg:text-md text-center lg:text-left">
+          <div className="text-sm sm:text-base lg:text-md sm:text-center lg:text-left">
             With our expert planning and seamless execution, we ensure every
             detail is perfect so that you can focus on your business goals.
           </div>
         </div>
         {/* Bottom Section */}
         <div
-          className="mt-8 lg:mt-16 text-5xl sm:text-8xl lg:text-[12rem] font-bold text-center text-transparent bg-clip-text"
+          className="mt-8 lg:mt-16 text-[3.5rem] sm:text-8xl lg:text-[12rem] font-bold sm:text-center text-transparent bg-clip-text"
           style={{
             backgroundImage:
               "linear-gradient(160deg, #a388f5, #6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
