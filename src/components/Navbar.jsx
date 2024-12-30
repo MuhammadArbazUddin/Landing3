@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const dropdownRef = useRef(null);
 
   const handleClick = () => {
     setMenu(!menu);
   };
+
+  const handleItemClick = () => {
+    setMenu(false);
+  };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setMenu(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className=" z-20 sm:absolute top-0 left-0 w-full">
@@ -73,16 +92,26 @@ const Navbar = () => {
               Let's Start
             </span>
           </button>
-          <div onClick={handleClick} className="bg-[#7959DA] p-4 rounded-full">
+          <div
+            onClick={handleClick}
+            className="bg-[#7959DA] p-4 rounded-full cursor-pointer hover:bg-[#ACA0CF]"
+          >
             <GiHamburgerMenu />
           </div>
         </div>
         {menu && (
-          <div className="absolute w-[300px] top-[6rem] right-10 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50">
+          <div
+            ref={dropdownRef}
+            className="absolute w-[300px] top-[6rem] right-10 bg-[#362C52] border border-[#7959DA] rounded-2xl p-4 z-50"
+          >
             <ul className="cursor-pointer">
-              <li className="mb-2">Menu Item 1</li>
-              <li className="mb-2">Menu Item 1</li>
-              <li>Menu Item 2</li>
+              <li onClick={handleItemClick} className="mb-2">
+                Menu Item 1
+              </li>
+              <li onClick={handleItemClick} className="mb-2">
+                Menu Item 1
+              </li>
+              <li onClick={handleItemClick}>Menu Item 2</li>
             </ul>
           </div>
         )}
