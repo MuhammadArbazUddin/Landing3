@@ -21,7 +21,22 @@ const Hero = () => {
             </span>
           </a>
           <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button className="btn">Let's Start</button>
+            <button
+              className="relative p-[2px] rounded-md"
+              style={{
+                background:
+                  "linear-gradient(160deg, #a388f5, #6ae8ff 22%, #fff694 52%, #fc67ff 83%)",
+              }}
+            >
+              <span
+                className="block bg-[#1B1B1A]  px-4 py-2 rounded-md"
+                style={{
+                  backgroundClip: "padding-box",
+                }}
+              >
+                Let's Start
+              </span>
+            </button>
           </div>
         </div>
       </header>

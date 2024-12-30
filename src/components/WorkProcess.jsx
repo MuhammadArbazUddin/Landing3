@@ -8,7 +8,7 @@ export default function WorkProcess() {
   });
   const x = useTransform(scrollYProgress, [0, 0.8], ["0%", "-50%"]);
   return (
-    <div className="pt-20 flex flex-col lg:flex-row items-start justify-center bg-[#1A1A19]">
+    <div className="pt-20 flex flex-col lg:flex-row items-start justify-center bg-[#141412]">
       <div className="text-white text-center w-full lg:w-1/3 pb-14 py-10 px-6 lg:sticky top-0">
         <h1 className="text-5xl font-bold capitalize">Our work process</h1>
       </div>
@@ -58,7 +58,7 @@ export default function WorkProcess() {
                     02
                   </p>
                   <p className="text-white text-2xl font-bold absolute left-0 bottom-2 p-1 bg-[#20201b]">
-                    Prepration
+                    Preparation
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">

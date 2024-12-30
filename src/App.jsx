@@ -12,8 +12,8 @@ export default function App() {
       <div>
         <Hero />
         <WorkProcess />
-        <CreativeWorks />
         <Videos />
+        <CreativeWorks />
         <CardVerticalSlider />
         <Footer />
       </div>

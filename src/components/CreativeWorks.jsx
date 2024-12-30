@@ -55,7 +55,7 @@ const CreativeWorks = () => {
 
   return (
     <>
-      <div className="py-8">
+      <div className="py-8 bg-[#141412]">
         <div className="text-white text-center w-full pb-14 px-5 pt-8 ">
           <p className="pb-3 flex items-center justify-center gap-3 text-base uppercase">
             {/* <img
