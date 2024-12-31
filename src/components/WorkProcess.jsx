@@ -17,7 +17,7 @@ export default function WorkProcess() {
       </div>
       <section
         ref={targetRef}
-        className="relative h-[160vh] lg:h-[200vh] w-full lg:w-2/3 max-lg:px-6 "
+        className="relative h-[240vh] lg:h-[200vh] w-full lg:w-2/3 max-lg:px-6 "
       >
         <div className="lg:sticky top-0 lg:flex  h-screen items-center lg:overflow-hidden">
           <motion.div
