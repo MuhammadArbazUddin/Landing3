@@ -108,7 +108,7 @@ const CreativeWorks = () => {
               className="flex items-center transition-transform duration-[1000ms] ease-in-out"
               style={{
                 transform: `translateX(-${
-                  currentIndex * (isLgScreen ? 458 : 360)
+                  currentIndex * (isLgScreen ? 458 : 390)
                 }px)`,
               }}
               onTransitionEnd={handleTransitionEnd}
