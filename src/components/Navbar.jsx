@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../assets/logo/512x512.png";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className=" z-20 sm:absolute top-0 left-0 w-full">
+    <header className="z-20 sm:absolute top-0 left-0 w-full">
       <div className="hidden px-[5rem] sm:flex flex-wrap p-5 flex-col md:flex-row items-center pb-16">
         <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
           <a href="#services" className="mr-5 cursor-pointer font-semibold">
@@ -37,8 +38,8 @@ const Navbar = () => {
           <a href="#work" className="mr-5 cursor-pointer font-semibold">
             Work
           </a>
-          <a href="#contact-us" className="mr-5 cursor-pointer font-semibold">
-            Contact Us
+          <a href="#about" className="mr-5 cursor-pointer font-semibold">
+            About
           </a>
         </nav>
 
@@ -46,13 +47,14 @@ const Navbar = () => {
           href="/"
           className="flex cursor-pointer order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
         >
-          <span className="w-14 h-14 text-black text-center font-bold pt-4 bg-white rounded-full">
-            SW
+          <span className="w-14 h-14 bg-white rounded-full">
+            <img src={logo} alt="" className="p-1" />{" "}
           </span>
         </a>
 
         <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-          <button
+          <a
+            href="#contact-us"
             className="relative p-[2px] rounded-md"
             style={{
               background:
@@ -65,9 +67,9 @@ const Navbar = () => {
                 backgroundClip: "padding-box",
               }}
             >
-              Let's Start
+              Contact Us
             </span>
-          </button>
+          </a>
         </div>
       </div>
       <div className="p-5 flex sm:hidden items-center justify-between">
@@ -82,7 +84,8 @@ const Navbar = () => {
           </a>
         </div>
         <div className="flex items-center gap-4">
-          <button
+          <a
+            href="#contact-us"
             className="relative p-[2px] rounded-md"
             style={{
               background:
@@ -95,9 +98,9 @@ const Navbar = () => {
                 backgroundClip: "padding-box",
               }}
             >
-              Let's Start
+              Contact Us
             </span>
-          </button>
+          </a>
           <div
             onClick={handleClick}
             className="bg-[#7959DA] p-4 rounded-full cursor-pointer hover:bg-[#ACA0CF]"
@@ -117,8 +120,8 @@ const Navbar = () => {
               <a href="#work" onClick={handleItemClick} className="mb-2">
                 Work
               </a>
-              <a href="#contact-us" onClick={handleItemClick}>
-                Contact Us
+              <a href="#about" onClick={handleItemClick}>
+                About
               </a>
             </ul>
           </div>

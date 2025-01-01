@@ -2,7 +2,10 @@ import React from "react";
 
 const Videos = () => {
   return (
-    <section className="sm:px-10  py-[6rem]  flex flex-col lg:flex-row items-center lg:items-stretch bg-[#1A1A19]">
+    <section
+      id="about"
+      className="sm:px-10  py-[6rem]  flex flex-col lg:flex-row items-center lg:items-stretch bg-[#1A1A19]"
+    >
       {/* Left Section */}
       <div className="lg:w-1/4 p-4">
         <div className="flex flex-col items-center gap-8 sm:gap-32">
