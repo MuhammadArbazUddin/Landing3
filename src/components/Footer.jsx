@@ -92,12 +92,12 @@ const SocialMediaLinks = () => (
           </li>
           <li>
             <a href="#terms" className="text-base sm:text-lg">
-              +1 519 697 8425
+              +1 (519) 697-8425{" "}
             </a>
           </li>
           <li>
             <a href="#terms" className="text-base sm:text-lg">
-              info@sociallywired.com
+              support@sociallywiredinc.com{" "}
             </a>
           </li>
           <li>
