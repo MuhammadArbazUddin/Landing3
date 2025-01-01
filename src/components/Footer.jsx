@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Form from "./Form";
+import { Link } from "react-router-dom";
 
 const SocialMediaLinks = () => (
   <div
@@ -100,9 +101,9 @@ const SocialMediaLinks = () => (
             </a>
           </li>
           <li>
-            <a href="/privacy-policy" className="text-base sm:text-lg">
+            <Link to="/privacy-policy" className="text-base sm:text-lg">
               Privacy Policy
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
