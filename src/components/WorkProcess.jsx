@@ -43,12 +43,11 @@ export default function WorkProcess() {
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  We collaborate closely with Snap to identify and pitch
+                  Sociallywired collaborates with Snap to source and secure
                   top-tier talent for Discover Shows. Once approved, we manage
-                  the entire process of running the show optimally, including
-                  re-editing and optimizing your existing (YouTube) content,
-                  conducting A/B tests on thumbnails, and analyzing performance
-                  data.
+                  the entire process, including re-editing and optimizing
+                  YouTube content, conducting A/B testing on thumbnails, and
+                  analyzing performance data to drive exceptional outcomes.
                 </p>
               </div>
               <hr className="hidden lg:block" />
@@ -68,12 +67,12 @@ export default function WorkProcess() {
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  @DV-LLC, we recognize the importance of tailoring content for
-                  each platform to maximize results. We unlock new revenue
-                  streams by adapting your content specifically for Facebook's
-                  unique environment. Your short-form content holds significant
-                  value on Facebook Reels and other lesser-known bonus features,
-                  which we leverage to your advantage.
+                  At @SWinc, we understand the power of platform-specific
+                  content to achieve maximum impact. We unlock new revenue
+                  opportunities by tailoring your content for Facebook’s unique
+                  ecosystem. From short-form content on Facebook Reels to
+                  leveraging lesser-known bonus features, we ensure your content
+                  thrives and delivers exceptional results.
                 </p>
               </div>
             </div>
@@ -95,11 +94,11 @@ export default function WorkProcess() {
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  Short-form content is here to stay, but monetizing it can be
-                  challenging. At Daily Vertex LLC, we help you localize and
-                  monetize your short-form content by repurposing it for YouTube
-                  Shorts, Snap, and Facebook Reels, turning your passion into a
-                  profitable venture.
+                  Short-form content is here to stay, but monetizing it can be a
+                  challenge. At Sociallywired, we specialize in localizing and
+                  repurposing your short-form content for platforms like YouTube
+                  Shorts, Snap, and Facebook Reels, transforming your passion
+                  into a profitable venture.
                 </p>
               </div>
               <hr className="hidden lg:block" />
@@ -119,13 +118,12 @@ export default function WorkProcess() {
                   </p>
                 </div>
                 <p className=" text-[#aca0cf] text-lg">
-                  Daily Vertex LLC offers specialized YouTube Shorts Management
-                  services. Our expert team excels in transforming your existing
-                  content into engaging short-form videos tailored for YouTube
-                  Shorts. Leveraging our extensive knowledge and skills, we
-                  craft captivating Shorts optimized for the platform's unique
-                  format. With our proven track record of generating millions of
-                  views.
+                  Sociallywired offers expert YouTube Shorts Management
+                  services, transforming your existing content into engaging
+                  short-form videos tailored for YouTube Shorts. With our
+                  in-depth knowledge and expertise, we create captivating Shorts
+                  optimized for the platform's unique format, driving millions
+                  of views and maximizing your reach.
                 </p>
               </div>
             </div>

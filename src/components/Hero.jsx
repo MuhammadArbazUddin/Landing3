@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative p-4 sm:pt-32 sm:p-8 h-[500px] sm:h-screen flex flex-col justify-center">
+    <div
+      id="home"
+      className="relative p-4 sm:pt-32 sm:p-8 h-[500px] sm:h-screen flex flex-col justify-center"
+    >
       {/* Background Layer */}
 
       <div
@@ -21,11 +24,11 @@ const Hero = () => {
         {/* Top Section */}
         <div className="sm:px-[3rem] flex flex-col lg:flex-row items-start gap-8 lg:gap-[10rem] justify-between">
           <div className="text-2xl sm:text-4xl lg:text-5xl font-semibold sm:text-center lg:text-left">
-            Precision planning for perfect corporate events
+            Optimize and monetize social media marketing
           </div>
           <div className="text-sm sm:text-base lg:text-md sm:text-center lg:text-left">
-            With our expert planning and seamless execution, we ensure every
-            detail is perfect so that you can focus on your business goals.
+            Sociallywiredinc boosts creators' reach with curated content and
+            tailored social media strategies for targeted audience growth.
           </div>
         </div>
         {/* Bottom Section */}
@@ -39,7 +42,7 @@ const Hero = () => {
           SociallyWired
         </div>
         <div className="flex justify-center items-center ">
-          <button
+          {/* <button
             className=" relative p-[2px] rounded-md"
             style={{
               background:
@@ -54,7 +57,7 @@ const Hero = () => {
             >
               Request A Quote{" "}
             </span>
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

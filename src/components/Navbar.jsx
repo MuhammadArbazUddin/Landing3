@@ -47,8 +47,8 @@ const Navbar = () => {
           href="/"
           className="flex cursor-pointer order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0"
         >
-          <span className="w-14 h-14 bg-white rounded-full">
-            <img src={logo} alt="" className="p-1" />{" "}
+          <span className="w-32 rounded-full">
+            <img src={logo} alt="" />{" "}
           </span>
         </a>
 
@@ -78,8 +78,8 @@ const Navbar = () => {
             href="/"
             className="flex cursor-pointer  title-font font-medium items-center text-gray-900 "
           >
-            <span className="w-14 h-14 text-black text-center font-bold pt-4 bg-white rounded-full">
-              SW
+            <span className="w-16 rounded-full">
+              <img src={logo} alt="" />{" "}
             </span>
           </a>
         </div>

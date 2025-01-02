@@ -1,6 +1,7 @@
 import { FaInstagram, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Form from "./Form";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo/512x512.png";
 
 const SocialMediaLinks = () => (
   <div
@@ -54,11 +55,7 @@ const SocialMediaLinks = () => (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-8 py-8 text-white">
       <div>
         <a href="#" className="text-lg">
-          <img
-            className="w-12 sm:w-16"
-            src="https://cdn.prod.website-files.com/66964d12f0212962622e6bd4/66975597026532de9a7a460b_eventplan.svg"
-            alt="Event Plan"
-          />
+          <img className="w-12 sm:w-32" alt="Event Plan" src={logo} />
         </a>
       </div>
       <div>

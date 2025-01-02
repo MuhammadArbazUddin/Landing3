@@ -56,7 +56,7 @@ const CreativeWorks = () => {
   return (
     <>
       <div
-        id="#work"
+        id="work"
         className="py-8"
         style={{
           boxShadow:
